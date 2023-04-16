@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quieres ser mi novio?</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.p1').hover(function(){
+                arriba = Math.random()*(400-1) +1;
+                abajo = Math.random() * (609-1) +1;
+              $(this).css('top', arriba);
+              $(this).css('left', abajo);
+            });
+        });
+    function dijoSi(){
+                    alert("Tremdenda esquizofrenia, ya eramos novios ndeah");
+                    window.open("https://www.youtube.com/watch?v=qT6AEtM0su0","","width=500, height=500");
+    }
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>¿Quieres ser mi novio?</h1>
+        </div>
+        <div class="opciones">
+            <p class="p1">No</p>
+            <p onclick="dijoSi()" target="_blank" class="p2">Si</p>
+        </div>
+    </div>
+    <div class="floress">
+        <img src="https://i.pinimg.com/564x/90/80/85/9080850ecfa448281a63315ea719d2e6.jpg" width="300" height="300" style="text-align: center";>
+    </div>
+</body>
+</html>
